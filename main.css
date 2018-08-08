@@ -1,0 +1,482 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:200');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400');
+
+body {
+	margin: 0;
+}
+
+h1{
+	color: white;
+}
+
+h3 {
+	position: relative;
+	display: block-inline;
+	text-align: center;
+	font-weight: 300px;
+}
+
+/* div {
+	border: 2px solid black;
+}
+ */
+ 
+ /* Sidebar start */
+
+.sidebar {
+	float: left;
+	height: 100%;
+	width: 189px;
+	margin: 0;
+	font-family: raleway;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	position: fixed;
+	z-index: 10;
+}
+
+.options {
+	height: 95%;
+	background: #34495e;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	/* border: 1px solid red; */
+}
+
+.tool {
+	height: 30px;
+}
+
+.exit {
+	font-size: 20px;
+	height: 100%;
+	width: 40px;
+	text-align: center;
+	line-height: 30px;
+	background-color: #fff;
+	color: #34495e;
+}
+
+.open {
+	font-size: 20px;
+	height: 35px;
+	width: 40px;
+	text-align: center;
+	line-height: 30px;
+	position: fixed;
+	background-color: #fff;
+	color: #34495e;
+	z-index: 5;
+}
+
+.exit:hover, .open:hover {
+	background-color: #ccc;
+	color: #34495e;
+	cursor: pointer;
+}
+
+.exit:active, .open:active {
+	font-size: 16px;
+}
+
+.item {
+	color: white;
+	padding: 10px;
+	font-size: 20px;
+	/* border: 1px solid red; */
+}
+
+.item:hover {
+	cursor: pointer;
+	background-color: #aaf;
+	color: black;
+}
+
+span {
+	display: inline;
+}
+
+.item p {
+	display: inline;
+}
+
+/* Sidebar end */
+ 
+/* animation button starts here*/
+
+.animatedbtn {
+	background:#fcd04b;
+	padding: 1.5em 0;
+	height: auto;
+	/* width: 1000px; */
+	/* float: right; */
+	/* clear: both; */
+}
+
+.head { 
+	font-weight: 300;		/* Also for the transformers Heading */
+	text-align: center;
+}
+
+.btn {
+	outline: none;
+	border: none;
+	display: block;
+	position: relative;
+	cursor: pointer;
+	background: #fcad26;
+	font-size: 16px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	padding: 25px 80px;
+	margin: 0 auto;
+    -webkit-box-shadow: 0 6px #efa424;
+            box-shadow: 0 6px #efa424;
+	border-radius: 20px;
+}
+
+.btn:hover {
+    -webkit-box-shadow: 0 3px #efa424;
+            box-shadow: 0 3px #efa424;
+	top: 3px;
+}
+
+.btn:active {
+    -webkit-box-shadow: 0 0 #efa424;
+            box-shadow: 0 0 #efa424;
+	top: 6px;
+}
+
+/* Animation button ends here */
+
+
+.transformers {
+	background: #6fcc9c;
+	padding: 1.5em 0;
+	margin: 0 0;
+	height: auto;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
+}
+
+.transformers h1 {
+	padding-bottom: 0;
+	margin-bottom: 0px;
+	/* border: 1px solid black; */
+}
+
+
+#instruction {
+	color: white;
+	font-weight: 100;
+	text-align: center;
+	margin-top: 0px;
+	width: 100%;
+	margin-bottom: 30px;
+	/* border: 1px solid black; */
+}
+
+.paragraphs {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;           /* <-- is always necessary for flexbox css */
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
+	/* box-sizing: border-box; */
+	width: 100%;
+	/* border: 1px solid black; */
+}
+
+.paragraphs p {
+	padding-top: 25px;
+	text-align: center;
+	/* border: 1px solid black; */
+	margin: 20px;
+}
+
+/* Transform property starts here */
+
+
+/* Transformation scale start */
+
+.enlarged:hover {
+	background-color: #83f;
+    -webkit-transform: scale(1.4);
+			-ms-transform: scale(1.4);
+			    transform: scale(1.4);
+	cursor: pointer;
+}
+
+/* Transformation scale end */
+/* Transformation translate start */
+
+.shifted:hover {
+	background-color: #3f8;
+	-webkit-transform: translate(25px, 25px);
+	        -ms-transform: translate(25px, 25px);
+	    transform: translate(25px, 25px);
+	cursor: pointer;
+}
+
+/* Transformation translate end */
+/* Transformation rotate start */
+
+.spin:hover {
+	background-color: #f83;
+	-webkit-transform: rotate(180deg);
+	        -ms-transform: rotate(180deg);
+	    transform: rotate(180deg);
+	cursor: pointer;
+}
+
+/* Animation */
+
+.enlarged, .shifted, .spin {
+	width: 150px;
+	height: 150px;
+	/* box-sizing: border-box; */
+	font-size: 15px;
+	color: white;
+	border-radius: 20px;
+	background-color: #1abc9c;
+	float: left;
+	display: block;
+	-webkit-transition: all 600ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+			-o-transition: all 600ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+			transition: all 600ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+.late {
+	-webkit-transition-delay: 1s;
+	     -o-transition-delay: 1s;
+	        transition-delay: 1s;
+}
+
+/* Transform property ends here */
+
+/* Crossfading emojis starts here */
+
+.emojis {
+	background:#7df9bb;
+	padding: 1.5em 0;
+	height: auto;
+	/* border: none; */
+	margin: 0 auto;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;           /* <-- is always necessary for flexbox css */
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
+}
+
+/* div on either side */
+
+.cf {
+	display: inline-block;
+	height: 250px;
+	width: 250px;
+}
+
+/* image within the div and its animation */
+
+.cf img {
+	border-radius: 100%;
+	position: absolute;
+	height: 250px;
+	width: 250px;
+	-webkit-transition: opacity 1s;
+			-o-transition: opacity 1s;
+			transition: opacity 1s;
+}
+
+.cf img.first:hover {
+	opacity: 0;
+}
+
+/* The div in the center */
+
+.mcf {
+	display: inline-block;
+	height: 250px;
+	width: 250px;
+}
+
+/* The image within the center div and its animation */
+
+.mcf img{
+	border-radius: 100%;
+	position: absolute;
+	height: 250px;
+	width: 250px;
+	-webkit-animation: smileys 13s infinite;
+	        animation: smileys 13s infinite;
+}
+
+@-webkit-keyframes smileys {
+	0% {
+		opacity: 1;
+		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	}
+	0% {
+		opacity: 1;
+		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	}
+	17% {
+		opacity: 1;
+		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	}
+	25% {
+		opacity: 0;
+		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	}
+	92% {
+		opacity: 0;
+		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	}
+	100% {
+		opacity: 1;
+		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	}
+}
+@keyframes smileys {
+	0% {
+		opacity: 1;
+		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	}
+	0% {
+		opacity: 1;
+		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	}
+	17% {
+		opacity: 1;
+		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	}
+	25% {
+		opacity: 0;
+		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	}
+	92% {
+		opacity: 0;
+		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	}
+	100% {
+		opacity: 1;
+		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	}
+}
+
+/* all six images executed the same animation */
+/* with 2 second interval b/w each image */
+
+.mcf img:nth-of-type(1) {
+	-webkit-animation-delay: 10s;
+	        animation-delay: 10s;
+}
+
+.mcf img:nth-of-type(2) {
+	-webkit-animation-delay: 8s;
+	        animation-delay: 8s;
+}
+
+.mcf img:nth-of-type(3) {
+	-webkit-animation-delay: 6s;
+	        animation-delay: 6s;
+}
+
+.mcf img:nth-of-type(4) {
+	-webkit-animation-delay: 4s;
+	        animation-delay: 4s;
+}
+
+.mcf img:nth-of-type(5) {
+	-webkit-animation-delay: 2s;
+	        animation-delay: 2s;
+}
+
+.mcf img:nth-of-type(6) {
+	-webkit-animation-delay: 0;
+	        animation-delay: 0;
+}
+
+/* Crossfading Images Ends here */
+
+
+
+.hz-div {
+	float: right;
+	width: 100%;
+	position: relative;
+	/* border: 1px solid black; */
+}
+
+/* Conditional code */
+
+.close {
+	-webkit-animation: shrink 10s 1;
+	        animation: shrink 10s 1;
+	-webkit-transform: scale(0);
+	    -ms-transform: scale(0);
+	        transform: scale(0);
+	-webkit-transform-origin: left top;
+	    -ms-transform-origin: left top;
+	        transform-origin: left top;
+	-webkit-transition-duration: .5s;
+	     -o-transition-duration: .5s;
+	        transition-duration: .5s;
+	
+}
+
+@keyfames shrink {
+	0% {
+		width: 189px;
+	}
+	
+	25% {
+		width: 141.75px;
+	}
+	
+	50% {
+		width: 94.5px;
+	}
+	
+	75% {
+		width: 47.25px;
+	}
+	
+	100% {
+		width: 0;
+	}
+}
+
+.expand {
+	-webkit-transform: scale(1);
+	    -ms-transform: scale(1);
+	        transform: scale(1);
+	-webkit-transition-duration: .5s;
+	     -o-transition-duration: .5s;
+	        transition-duration: .5s;
+}
