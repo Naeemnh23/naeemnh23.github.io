@@ -476,7 +476,16 @@ span {
 	-webkit-transform: scale(1);
 	    -ms-transform: scale(1);
 	        transform: scale(1);
+	-webkit-transform-origin: left top;
+	    -ms-transform-origin: left top;
+	        transform-origin: left top;
 	-webkit-transition-duration: .5s;
 	     -o-transition-duration: .5s;
 	        transition-duration: .5s;
+}
+
+.state {
+	-webkit-transform: scale(0);
+	    -ms-transform: scale(0);
+	        transform: scale(0);
 }

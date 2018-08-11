@@ -1,5 +1,7 @@
 $(document).ready(function() {
 	
+	$(".sidebar").addClass("state");
+	
 	$(".exit").click(function() {
 		$(".sidebar").removeClass("expand");
 		$(".section").removeClass("expand");
@@ -12,7 +14,8 @@ $(document).ready(function() {
 	$(".open").click(function() {
 		$(".item").removeClass("close");
 		$(".section").removeClass("close");
-		$(".sidebar").removeClass(".close");
+		$(".sidebar").removeClass("close");
+		$(".sidebar").removeClass("state");
 		$(".item").addClass("expand");
 		$(".section").addClass("expand");
 		$(".sidebar").addClass("expand");
