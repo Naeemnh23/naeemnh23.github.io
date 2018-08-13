@@ -60,6 +60,7 @@ h3 {
 
 .tool {
 	height: 30px;
+	width: 15vw;
 }
 
 .exit {
@@ -74,10 +75,10 @@ h3 {
 
 .open {
 	font-size: 20px;
-	height: 35px;
+	height: 30px;
 	width: 40px;
 	text-align: center;
-	line-height: 30px;
+	line-height: 25px;
 	position: fixed;
 	background-color: #fff;
 	color: #34495e;
